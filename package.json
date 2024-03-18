@@ -1,14 +1,6 @@
 {
   "name": "metaits-svelte",
   "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "prettier --check .",
-    "format": "prettier --write ."
-  },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-static": "^3.0.1",
@@ -22,5 +14,16 @@
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.3"
   },
-  "type": "module"
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "type": "module",
+  "dependencies": {
+    "lucide-svelte": "^0.358.0"
+  }
 }

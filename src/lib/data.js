@@ -73,3 +73,30 @@ export const Topics = [
 		]
 	},
 ]
+
+export const Speakers = [
+	{
+		id: 1,
+		name: "Dr. Wirawan",
+		university: "Institut Teknologi Sepuluh Nopember",
+		paperTitle: "Building National Competence in Quantum  Information Science and Technology: Yes, We Can",
+		about: "Wirawan received the Ir. degree in electrical engineering from ITS, in 1987, the DEA (Master) degree in image and signal processing from Polytech Nice Sophia – University of Cote d’Azur, France, in 1996, and the Ph.D. degree in signal and image processing Telecom ParisTech, France, in 2003. He is currently a lecturer at the Department of Electrical Engineering, ITS, since 1989. His research interests include statistical signal processing, wireless sensor networks, underwater acoustics, communication security, and video coding. He is a member of the IEEE.",
+		photoUrl: "Photo-Dr-Wirawan.jpg"
+	},
+	{
+		id: 2,
+		name: "Prof. Hazlie Mokhlis",
+		university: "Universiti Malaya",
+		paperTitle: "Building Resilient Power Distribution System: Research Opportunities and Potential Industrial Collaboration",
+		about: "Hazlie Mokhlis received the Bachelor of Engineering degree and Master of Engineering Science in Electrical Engineering from Universiti Malaya in 1999 and 2003 respectively. He received PhD degree from the University of Manchester in 2009. Currently, he is a Professor and Research Cluster Chairman (Innovative Industry & Sustainability Science) at Universiti Malaya. Hazlie is actively involved in research as a principal investigator in the area of Power & Energy Systems. He is the author and co-author of more than 300 publications with H-index of 44. Up to now, he had supervised to completion 38 PhD, and more than 60 Master students (Research & coursework). His outstanding research led him to be listed in the World’s Top 2% of Scientists by Stanford University in 2021, 2022, 2023. In 2021, he was awarded Top Research Scientist Malaysia (TRSM) by Academic Science Malaysia. Besides research, he is active in the development of Malaysian Standard related to Electrical power systems. Hazlie is Fellow IET, Professional Engineer in UK and Malaysia, and Senior Member IEEE. He was chairman of IEEE Power Energy Society, Malaysia Chapter (2020-2022). His current research interest focus on improving distribution system performance and its resiliency against extreme weather.",
+		photoUrl: "Photo-Prof-Hazlie-Mokhlis.jpg"
+	},
+	{
+		id: 3,
+		name: "Prof. Wan-Jen Huang",
+		university: "National Sun Yat-sen University",
+		paperTitle: "Applications of AI in Communication Systems and Industrial Collaborations",
+		about: "Wan-Jen Huang received her Ph.D. degree in the Department of Electrical Engineering from the University of Southern California, CA, in 2008. She is currently working as an associate professor and the chairman of the Institute of Communications Engineering at the National Sun Yat-Sen University, Taiwan. Her research interests include signal estimation and detection and baseband signal processing of wireless communication systems such as massive MIMO, RIS, cooperative communications, etc.",
+		photoUrl: "prof-wan-jen-huang.jpg"
+	},
+]
