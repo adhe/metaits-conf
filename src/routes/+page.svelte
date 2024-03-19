@@ -1,5 +1,5 @@
 <script>
-	import { Topics, Speakers } from '../lib/data.js';
+	import { Topics, Speakers, Pricing } from '../lib/data.js';
 	import TopicItem from '$lib/components/TopicItem.svelte';
 	import Speaker from '$lib/components/Speaker.svelte';
 	import ArrowDown from '$lib/assets/ArrowDown.svelte';
@@ -25,7 +25,7 @@
 				<div class="text-3xl font-light">
 					<span class="font-bold">10-12</span> October 2024
 				</div>
-				<div class="text-xl font-light">JW Marriot Hotel Surabaya</div>
+				<div class="text-xl font-light">JW Marriot Hotel Surabaya, East Java, Indonesia</div>
 				<div class=" font-light tracking-wider underline opacity-80">See important dates</div>
 			</div>
 			<div>
@@ -44,7 +44,7 @@
 </div>
 
 <div class="container mx-auto py-32 flex flex-col items-center">
-	<div class="text-5xl font-medium max-w-4xl text-center">
+	<div class="text-5xl text-gradient-meta font-medium max-w-4xl text-center">
 		“Collaborative Innovation: A Bridging from Academia to Industry towards Sustainable Strategic
 		Partnership”
 	</div>
@@ -61,9 +61,9 @@
 		as a ‘no show’ and removed from the conference proceedings.
 	</div>
 
-	<div class="w-4/5 flex items-center space-x-6 mt-20">
+	<div class="w-full flex items-center space-x-6 mt-20">
 		<div class="grow border-t-2 w-20" />
-		<div class="relative text-5xl font-medium">
+		<div class="relative text-5xl font-medium text-gradient-meta">
 			Topics of interest
 			<div class="absolute text-base opacity-50 bottom-0 translate-y-full inset-x-0 text-center">
 				include, but are not limited to
@@ -78,7 +78,7 @@
 	</div>
 </div>
 
-<div class="min-h-screen bg-teal-950">
+<div class="min-h-screen bg-gradient-meta">
 	<div class="w-3/5 mx-auto py-32">
 		<div class="text-5xl font-medium text-white text-center">Keynote Speaker</div>
 		<div class="divide-y divide-white/25">
@@ -88,3 +88,44 @@
 		</div>
 	</div>
 </div>
+
+
+<div class="container mx-auto flex flex-col items-center">
+	<div class="w-4/5 flex items-center space-x-6 mt-20">
+		<div class="grow border-t-2 w-20" />
+			<div class=" text-5xl font-medium text-gradient-meta">Submissions</div>
+		<div class="grow border-t-2 w-20" />
+</div>
+
+<div class="py-32">
+	<div class="flex">
+		<div>Categori</div>
+		<div>International</div>
+		<div>Domestik</div>
+	</div>
+	{#each Pricing as price}
+		<div class="flex">
+			<div>{price.category}</div>
+			<div>{price.international}</div>
+			<div>{price.domestic}</div>
+		</div>
+	{/each}
+</div>
+</div>
+
+<div class="container mx-auto w-4/5 space-x-8 flex py-32 border-t">
+	<div class="w-1/2 flex flex-col justify-between">
+		<div class="relative text-5xl  font-medium text-gradient-meta">Contact Us</div>
+		<div class="space-y-3">
+			<div class="text-2xl font-medium leading-tight">Universitas Nusantara PGRI Kediri, East Java, Indonesia</div>
+			<div class="text-lg leading-tight opacity-75 ">Jl. Ahmad Dahlan No.76<br/>Mojoroto, Kec. Mojoroto, Kota Kediri<br/>Jawa Timur 64112 </div>
+			<div class="space-y-1 mt-3">
+				<div class="rounded-full px-5 py-2 border border-black inline-block text-lg">Email: <span class="font-medium underline">iconnic@unpkdr.ac.id</span></div>
+				 <div class="rounded-full px-5 py-2 border border-black inline-block text-lg">WhatsApp: <span class="font-medium underline">+62 813-3524-2202</span> (Mrs. Erna Daniati)</div>
+				</div>
+		</div>
+	</div>
+	<div class="bg-gray-100 w-1/2 h-96 rounded-xl">
+	</div>
+</div>
+

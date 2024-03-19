@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .text-gradient-meta {
+    @apply bg-gradient-to-r from-[#003844] to-[#009EA8] inline-block text-transparent bg-clip-text;
+  }
+
+  .bg-gradient-meta {
+    @apply bg-gradient-to-tr from-[#003844] to-[#009EA8];
+  }
+}
