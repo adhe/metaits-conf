@@ -13,28 +13,28 @@
 			<img src="metaits-logo-white.svg" class="h-12" alt="" />
 		</div>
 		<div>
-			<div class=" text-3xl font-medium border-2 border-white px-5 py-2 rounded-full inline-block">
+			<div class=" text-lg font-medium border-2 border-white px-5 py-2 rounded-full inline-block">
 				Call for paper
 			</div>
-			<div class="mt-6 text-6xl font-semibold">
+			<div class="mt-6 text-4xl  font-semibold">
 				1st Medical Technology and Applications International Conference 2024
 			</div>
 		</div>
 		<div class="flex items-center justify-between border-t border-white/35 pt-8 pb-12">
 			<div>
-				<div class="text-3xl font-light">
+				<div class="text-2xl font-light">
 					<span class="font-bold">10-12</span> October 2024
 				</div>
-				<div class="text-xl font-light">JW Marriot Hotel Surabaya, East Java, Indonesia</div>
-				<div class=" font-light tracking-wider underline opacity-80">See important dates</div>
+				<div class=" font-light">JW Marriot Hotel Surabaya, East Java, Indonesia</div>
+				<div class="text-sm font-light tracking-wider underline opacity-80">See important dates</div>
 			</div>
 			<div>
-				<button class="bg-white rounded-full px-8 py-4 text-xl text-teal-950 flex items-center">
+				<a href="#more" class="bg-white rounded-full px-6 py-2  text-lg  text-teal-950 flex items-center">
 					More Info
-					<div class="size-6 rounded-full ml-5">
+					<div class="size-4 xl:size-6 rounded-full ml-5">
 						<ArrowDown />
 					</div>
-				</button>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -43,7 +43,7 @@
 	</div>
 </div>
 
-<div class="container mx-auto py-32 flex flex-col items-center">
+<div id="more" class="container mx-auto py-32 flex flex-col items-center">
 	<div class="text-5xl text-gradient-meta font-medium max-w-4xl text-center">
 		“Collaborative Innovation: A Bridging from Academia to Industry towards Sustainable Strategic
 		Partnership”
@@ -61,7 +61,7 @@
 		as a ‘no show’ and removed from the conference proceedings.
 	</div>
 
-	<div class="w-full flex items-center space-x-6 mt-20">
+	<div id="topic" class="w-full flex items-center space-x-6 pt-32">
 		<div class="grow border-t-2 w-20" />
 		<div class="relative text-5xl font-medium text-gradient-meta">
 			Topics of interest
@@ -78,7 +78,7 @@
 	</div>
 </div>
 
-<div class="min-h-screen bg-gradient-meta">
+<div id="keynote-speaker" class="min-h-screen bg-gradient-meta">
 	<div class="w-3/5 mx-auto py-32">
 		<div class="text-5xl font-medium text-white text-center">Keynote Speaker</div>
 		<div class="divide-y divide-white/25">
@@ -90,8 +90,8 @@
 </div>
 
 
-<div class="container mx-auto flex flex-col items-center">
-	<div class="w-4/5 flex items-center space-x-6 mt-20">
+<div id="submissions" class="container mx-auto pt-32 flex flex-col items-center">
+	<div class="w-4/5 flex items-center space-x-6">
 		<div class="grow border-t-2 w-20" />
 			<div class=" text-5xl font-medium text-gradient-meta">Submissions</div>
 		<div class="grow border-t-2 w-20" />
@@ -113,7 +113,7 @@
 </div>
 </div>
 
-<div class="container mx-auto w-4/5 space-x-8 flex py-32 border-t">
+<div id="contact" class="container mx-auto w-4/5 space-x-8 flex py-32 border-t">
 	<div class="w-1/2 flex flex-col justify-between">
 		<div class="relative text-5xl  font-medium text-gradient-meta">Contact Us</div>
 		<div class="space-y-3">

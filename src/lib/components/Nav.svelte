@@ -23,12 +23,12 @@
 	<div class="container w-4/5 flex items-center justify-between py-3 mx-auto">
 		<img src="metaits-logo-black.svg" class="h-12 " alt="" />
 		<div class="flex">
-			<Link href={url}>Home</Link>
-			<Link href={url + '/#'}>Call for Paper</Link>
-			<Link href={url + '/#'}>Keynote Speaker</Link>
-			<Link href={url + '/#'}>Submissions</Link>
+			<Link href={url + '#'}>Home</Link>
+			<Link href={url + '/#topic'}>Topics</Link>
+			<Link href={url + '/#keynote-speaker'}>Keynote Speaker</Link>
+			<Link href={url + '/#submissions'}>Submissions</Link>
 			<Link href={url + '/#'}>Registration</Link>
-			<Link href={url + '/#'}>Contact</Link>
+			<Link href={url + '/#contact'}>Contact</Link>
 		</div>
 	</div>
 </div>

@@ -13,3 +13,7 @@
     @apply bg-gradient-to-tr from-[#003844] to-[#009EA8];
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
