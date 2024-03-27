@@ -77,31 +77,31 @@ export const Topics = [
 export const Speakers = [
 	{
 		id: 1,
-		name: 'Dr. Wirawan',
-		university: 'Institut Teknologi Sepuluh Nopember',
+		name: 'Professor Dr.Ir. N.J.J. Verdonschot (NICO)',
+		university: 'University of Twente, Enschede (UT)',
 		paperTitle:
 			'Building National Competence in Quantum  Information Science and Technology: Yes, We Can',
 		about:
-			'Wirawan received the Ir. degree in electrical engineering from ITS, in 1987, the DEA (Master) degree in image and signal processing from Polytech Nice Sophia – University of Cote d’Azur, France, in 1996, and the Ph.D. degree in signal and image processing Telecom ParisTech, France, in 2003. He is currently a lecturer at the Department of Electrical Engineering, ITS, since 1989. His research interests include statistical signal processing, wireless sensor networks, underwater acoustics, communication security, and video coding. He is a member of the IEEE.',
+			'In 1988 I did my master thesis in Nijmegen at the Orthopaedic Research Laboratory(ORL). After my graduation mid- 1989 I stayed at the ORL as Junior Researcher and performed various kinds of projects focusing on testing of orthopaedic implants. Most projects were funded by the Orthopaedic Industry which gradually led to an extensive network of R&D departments of small to large international orthopaedic companies. The publications of these projects resulted in my Ph.D. degree in 1995. Subsequently I was promoted to Assistant Professor and was appointed to be Director of Pre-clinical testing of joint implants. In 2003 I was further promoted to Associate Professor. Since February 2014 I am a full Professor at the Radboudumc Institute for Health Sciences (RIHS), my theme is Reconstructive and regenerative medicine. My research interests are focused on orthopaedic- biomechanical problems of the lower extremity.Our group utilizes computer modelling techniques in combination with cadaveric testing, animal research and clinical studies in order to optimize diagnostic and evaluation tools for orthopaedic patients.We work with researchers and orthopaedic companies to optimize the functionality and longevity of orthopaedic implants such as knee and hip prostheses.Furthermore, we focus on the calculation of bone strength for patients that have osteoporosis or metastatic lesions. Since October 2007 I have a part - time appointment(1 day per week) as Professor in Implant Biomechanics at the University of Twente(dept.Biomechanical Engineering headed by Prof.Bart Koopman), where I am setting up a research line related to biomechanics of the Musculo - Skeletal system, see TLEMsafe(www.tlemsafe.eu /). In December 2012 I was awarded a "European Research Council - Advanced Grant" for follow up research.In Nijmegen we are currently expanding our modelling efforts to generate patient specific models and feed these models with innovative dynamic imaging techniques(see www.erc - biomechtools.eu). In 2016 I was appointed as a visiting professor at the Politecnico di Milano(Italy). In 2018 I received an Honorary Doctorate of Aalborg University(Denmark)',
 		photoUrl: 'Photo-Dr-Wirawan.jpg'
 	},
 	{
 		id: 2,
-		name: 'Prof. Hazlie Mokhlis',
-		university: 'Universiti Malaya',
+		name: 'Professor Rameen Shakur MD, Ph.D',
+		university: 'University of Brighton, UK',
 		paperTitle:
 			'Building Resilient Power Distribution System: Research Opportunities and Potential Industrial Collaboration',
 		about:
-			'Hazlie Mokhlis received the Bachelor of Engineering degree and Master of Engineering Science in Electrical Engineering from Universiti Malaya in 1999 and 2003 respectively. He received PhD degree from the University of Manchester in 2009. Currently, he is a Professor and Research Cluster Chairman (Innovative Industry & Sustainability Science) at Universiti Malaya. Hazlie is actively involved in research as a principal investigator in the area of Power & Energy Systems. He is the author and co-author of more than 300 publications with H-index of 44. Up to now, he had supervised to completion 38 PhD, and more than 60 Master students (Research & coursework). His outstanding research led him to be listed in the World’s Top 2% of Scientists by Stanford University in 2021, 2022, 2023. In 2021, he was awarded Top Research Scientist Malaysia (TRSM) by Academic Science Malaysia. Besides research, he is active in the development of Malaysian Standard related to Electrical power systems. Hazlie is Fellow IET, Professional Engineer in UK and Malaysia, and Senior Member IEEE. He was chairman of IEEE Power Energy Society, Malaysia Chapter (2020-2022). His current research interest focus on improving distribution system performance and its resiliency against extreme weather.',
+			'Prof  Rameen Shakur MD Ph.D. is an academic clinician-scientist and molecular biologist by training specializing in molecular mechanisms of regeneration and applications of precision medicine for cardiovascular disease at the Massachusetts Institute of Technology, Boston USA. Prof Shakur undertook his undergraduate studies at the University of Cambridge, UK where he completed his MPhil in Immunology, and completed his medical studies at the University of Edinburgh. He completed his clinical training at the John Radcliffe Hospital, University of Oxford, UK. He undertook his general medical and cardiology training in London at St Bartholomews Hospital, The London Chest Hospital, and Cardiac imaging at the Royal Brompton Hospital, London. He was awarded the Winston Churchill fellowship at Harvard medical school where he undertook work in Prof Peter Libbys lab and also at the Mayo Clinic, Rochester at Prof Mike Ackermans lab. He completed his Ph.D. at the University of Cambridge at the Wellcome Trust Sanger centre and regenerative medicine laboratory. During his Ph.D., he was awarded the Isabelle Buohon award to undertake work on genome editing in human IPS cells at Prof George Churchs lab at Harvard. He undertook his post-doctoral work at Prof Bob Langers lab as the inaugural Janson fellow at the Koch institute for integrative cancer research at MIT. His work centers upon the delineation of the mechanism of action of inflammation and modulation of connexins and therapies for drug discovery in cardiovascular disease. He is also been instrumental in a number of important papers on novel models for the phenotype-genotype disparities in inherited cardiomyopathies.',
 		photoUrl: 'Photo-Prof-Hazlie-Mokhlis.jpg'
 	},
 	{
 		id: 3,
-		name: 'Prof. Wan-Jen Huang',
-		university: 'National Sun Yat-sen University',
+		name: 'Dr. Eng. Dhany Arifianto, ST., M.Eng',
+		university: 'Institut Teknologi Sepuluh Nopember (ITS) Surabaya. Indonesia',
 		paperTitle: 'Applications of AI in Communication Systems and Industrial Collaborations',
 		about:
-			'Wan-Jen Huang received her Ph.D. degree in the Department of Electrical Engineering from the University of Southern California, CA, in 2008. She is currently working as an associate professor and the chairman of the Institute of Communications Engineering at the National Sun Yat-Sen University, Taiwan. Her research interests include signal estimation and detection and baseband signal processing of wireless communication systems such as massive MIMO, RIS, cooperative communications, etc.',
+			'Dr. Eng. Dhany Arifianto, ST., M.Eng received his Ph.D. degree in the Department of Information Processing from the university of Tokyo Institute of Technology, Japan in 2005. He is currently working as an associate professor and the lecturer in the Medical Technology program study, Institut Teknologi Sepuluh Nopember, Indonesia. His research interests include Acoustical Signal Processing, Auditory Neuroscience, Vibration Analysis etc.',
 		photoUrl: 'prof-wan-jen-huang.jpg'
 	}
 ];

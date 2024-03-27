@@ -2,85 +2,104 @@
 	import { Topics, Speakers, Pricing } from '../lib/data.js';
 	import TopicItem from '$lib/components/TopicItem.svelte';
 	import Speaker from '$lib/components/Speaker.svelte';
+	import Title from '$lib/components/Title.svelte';
 	import ArrowDown from '$lib/assets/ArrowDown.svelte';
 </script>
 
-<div class=" min-h-screen font-medium w-full flex">
+<div class="relative min-h-screen font-medium w-full flex flex-col xl:flex-row">
 	<div
-		class="bg-gradient-to-tr from-[#003844] to-[#009EA8] text-white px-24 py-3 flex flex-col justify-between w-3/5"
+		class="z-10 flex-1 bg-gradient-to-b from-[#009EA8]/80 to-[#003844] to-80% xl:bg-gradient-to-tr xl:from-[#003844] xl:to-[#009EA8] text-white px-5 xl:pl-24 xl:pr-12 py-3 flex flex-col items-center xl:items-start xl:justify-between xl:w-3/5"
 	>
-		<div class="py-6">
-			<img src="metaits-logo-white.svg" class="h-12" alt="" />
+		<div class="py-6 flex-1 xl:flex-none">
+			<img src="metaits-logo-white.svg" class="h-8 xl:h-12" alt="" />
 		</div>
-		<div>
-			<div class=" text-lg font-medium border-2 border-white px-5 py-2 rounded-full inline-block">
-				Call for paper
-			</div>
-			<div class="mt-6 text-4xl  font-semibold">
-				1st Medical Technology and Applications International Conference 2024
-			</div>
-		</div>
-		<div class="flex items-center justify-between border-t border-white/35 pt-8 pb-12">
-			<div>
-				<div class="text-2xl font-light">
-					<span class="font-bold">10-12</span> October 2024
+		<div class="flex flex-col">
+			<div class="flex m-auto xl:m-0">
+				<div
+					class="xl:text-lg font-medium border-2 border-white px-4 py-1 xl:px-5 xl:py-2 rounded-full"
+				>
+					Call for paper
 				</div>
-				<div class=" font-light">JW Marriot Hotel Surabaya, East Java, Indonesia</div>
-				<div class="text-sm font-light tracking-wider underline opacity-80">See important dates</div>
+			</div>
+			<div
+				class="mt-4 xl:mt-6 text-2xl xl:text-4xl text-center xl:text-left font-semibold leading-tight"
+			>
+				1st International Conference on Medical Technology and Its Application 2024
+			</div>
+		</div>
+		<div
+			class="mt-4 xl:mt-0 xl:flex items-center justify-between border-t border-white/35 pt-3 xl:pt-8 pb-12 w-full"
+		>
+			<div>
+				<div class="text-lg xl:text-2xl font-light text-center xl:text-left">
+					<span class="font-bold">16-17</span> October 2024
+				</div>
+				<div class="text-sm xl:text-base text-center xl:text-left font-light">
+					JW Marriot Hotel Surabaya, East Java, Indonesia
+				</div>
+				<div
+					class="text-center xl:text-left text-sm font-light tracking-wider underline opacity-80"
+				>
+					See important dates
+				</div>
 			</div>
 			<div>
-				<a href="#more" class="bg-white rounded-full px-6 py-2  text-lg  text-teal-950 flex items-center">
+				<a
+					href="#more"
+					class="bg-white rounded-full px-6 py-2 h-12 xl:h-14 xl:text-lg text-teal-950 flex justify-between items-center mt-16 xl:mt-0"
+				>
 					More Info
-					<div class="size-4 xl:size-6 rounded-full ml-5">
+					<div class="size-5 xl:size-6 xl:ml-5">
 						<ArrowDown />
 					</div>
 				</a>
 			</div>
 		</div>
 	</div>
-	<div class="bg-[#106476] w-2/5">
-		<img src="foto-gedung-fkk-min.jpg" class="h-full object-cover" alt="" />
+	<div class="z-0 absolute xl:static bg-black inset-y-0 xl:w-2/5">
+		<img src="foto-gedung-fkk-min.jpg" class="object-cover h-full" alt="" />
 	</div>
 </div>
 
-<div id="more" class="container mx-auto py-32 flex flex-col items-center">
-	<div class="text-5xl text-gradient-meta font-medium max-w-4xl text-center">
-		“Collaborative Innovation: A Bridging from Academia to Industry towards Sustainable Strategic
-		Partnership”
+<div id="more" class="container mx-auto px-5 py-16 xl:py-32 flex flex-col items-center">
+	<div class="text-2xl xl:text-4xl text-gradient-meta font-medium max-w-4xl text-center">
+		“Recent Breakthroughs in Medical Technology and Healthcare System”
 	</div>
-	<div class="max-w-4xl text-center mt-12 text-lg text-gray-600">
+	<div class="max-w-4xl text-center mt-8 xl:mt-12 xl:text-lg text-gray-600">
 		ISITIA 2024 is the annual international conference held by the Department of Electrical
 		Engineering of the Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia. It was
 		previously known as SITIA and has been held annually by the department since 1999. This year,
 		ISITIA will be held in hybrid.
 	</div>
-	<div class="max-w-4xl text-center mt-5 text-lg text-gray-600">
+	<div class="max-w-4xl text-center mt-3 xl:mt-5 xl:text-lg text-gray-600">
 		Papers that are accepted and presented at ISITIA 2024 will be submitted for possible inclusion
 		in IEEE Xplore, subject to meeting IEEE Xplore’s scope and quality requirements. If an author
 		fails to register for the conference or does not present their paper, the paper will be flagged
 		as a ‘no show’ and removed from the conference proceedings.
 	</div>
 
-	<div id="topic" class="w-full flex items-center space-x-6 pt-32">
-		<div class="grow border-t-2 w-20" />
-		<div class="relative text-5xl font-medium text-gradient-meta">
+	<Title title="Important Dates" />
+
+	<div id="topic" class="w-full flex items-center space-x-6 pt-16 xl:pt-32">
+		<div class="grow border-t-2 xl:w-20" />
+		<div class="relative text-3xl xl:text-4xl font-medium text-gradient-meta">
 			Topics of interest
 			<div class="absolute text-base opacity-50 bottom-0 translate-y-full inset-x-0 text-center">
 				include, but are not limited to
 			</div>
 		</div>
-		<div class="grow border-t-2 w-20" />
+		<div class="grow border-t-2 xl:w-20" />
 	</div>
-	<div class="mt-12 grid grid-cols-3 gap-5">
+	<div class="mt-12 grid xl:grid-cols-3 gap-2 xl:gap-3">
 		{#each Topics as topic}
 			<TopicItem data={topic} />
 		{/each}
 	</div>
 </div>
 
-<div id="keynote-speaker" class="min-h-screen bg-gradient-meta">
-	<div class="w-3/5 mx-auto py-32">
-		<div class="text-5xl font-medium text-white text-center">Keynote Speaker</div>
+<div id="keynote-speaker" class="px-5 xl:px-0 bg-gradient-meta">
+	<div class="xl:w-3/5 mx-auto py-16 xl:py-32">
+		<div class="text-3xl xl:text-4xl font-medium text-white text-center">Keynote Speaker</div>
 		<div class="divide-y divide-white/25">
 			{#each Speakers as speaker}
 				<Speaker data={speaker} />
@@ -89,43 +108,215 @@
 	</div>
 </div>
 
+<Title title="Registration" />
 
-<div id="submissions" class="container mx-auto pt-32 flex flex-col items-center">
-	<div class="w-4/5 flex items-center space-x-6">
-		<div class="grow border-t-2 w-20" />
-			<div class=" text-5xl font-medium text-gradient-meta">Submissions</div>
-		<div class="grow border-t-2 w-20" />
-</div>
+<div class="px-5 xl:px-0 mt-5 xl:mt-12 xl:w-3/5 mx-auto">
+	<div class="text-lg xl:text-2xl text-gradient-meta font-medium mb-2 xl:mb-3">
+		Registration Payment Method
+	</div>
+	<div>
+		Online registration along with the receipt of transferred fee, as an attachment Registration
+		will be confirmed only when the registration fee (non-refundable) has been paid.  Please note
+		that author and/or additional paper registrations are non-refundable.
+	</div>
 
-<div class="py-32">
-	<div class="flex">
-		<div>Categori</div>
-		<div>International</div>
-		<div>Domestik</div>
+	<div
+		class="mt-5 xl:mt-12 flex text-white rounded-t-lg xl:rounded-t-xl bg-gradient-meta text-sm xl:text-base font-medium tracking-wide"
+	>
+		<div class="p-3 flex-1">Category</div>
+		<div class="p-3 w-[123px] text-center border-x border-white/20">International</div>
+		<div class="p-3 w-32 xl:w-40 text-center">Domestik</div>
 	</div>
 	{#each Pricing as price}
-		<div class="flex">
-			<div>{price.category}</div>
-			<div>{price.international}</div>
-			<div>{price.domestic}</div>
+		<div
+			class="flex border border-t-0 last:rounded-b-lg last:xl:rounded-b-xl text-sm xl:text-base hover:bg-gray-100"
+		>
+			<div class="flex-1 px-2 py-1 xl:p-3 font-medium">{price.category}</div>
+			<div class="flex items-center justify-end px-2 py-1 xl:p-3 w-[123px] border-x">
+				{price.international}
+			</div>
+			<div class="flex items-center justify-end px-2 py-1 xl:p-3 w-32 xl:w-40 text-right">
+				{price.domestic}
+			</div>
 		</div>
 	{/each}
-</div>
-</div>
 
-<div id="contact" class="container mx-auto w-4/5 space-x-8 flex py-32 border-t">
-	<div class="w-1/2 flex flex-col justify-between">
-		<div class="relative text-5xl  font-medium text-gradient-meta">Contact Us</div>
-		<div class="space-y-3">
-			<div class="text-2xl font-medium leading-tight">Universitas Nusantara PGRI Kediri, East Java, Indonesia</div>
-			<div class="text-lg leading-tight opacity-75 ">Jl. Ahmad Dahlan No.76<br/>Mojoroto, Kec. Mojoroto, Kota Kediri<br/>Jawa Timur 64112 </div>
-			<div class="space-y-1 mt-3">
-				<div class="rounded-full px-5 py-2 border border-black inline-block text-lg">Email: <span class="font-medium underline">iconnic@unpkdr.ac.id</span></div>
-				 <div class="rounded-full px-5 py-2 border border-black inline-block text-lg">WhatsApp: <span class="font-medium underline">+62 813-3524-2202</span> (Mrs. Erna Daniati)</div>
-				</div>
+	<div class="xl:grid xl:grid-cols-2 xl:gap-10 mt-5 xl:mt-8">
+		<div class="">
+			<div class="text-lg xl:text-2xl mb-3 font-medium text-gradient-meta">
+				International Participants
+			</div>
+			<div>
+				Registration payments for international participants are made via EDAS using a credit card
+				at an exchange rate of US dollars. Confirmation is automatic because it uses the EDAS
+				system. If your payment is successful, the status will change to PAID. Please <a
+					href="https://edas.info/r31248">CLICK HERE</a
+				>
+			</div>
+		</div>
+		<div>
+			<div class="text-lg xl:text-2xl mb-3 font-medium text-gradient-meta">
+				Domestic Participants
+			</div>
+			<div>
+				Registration Payment for Domestic Participants can be made by local bank transfer, to:
+				<ul class="list-disc px-6 my-3">
+					<li>Name of Bank: <strong>Bank BNI</strong></li>
+					<li>Beneficiary Name: <strong>Anita Sari Wardani</strong></li>
+					<li>Account number: <strong>154 6778 607</strong></li>
+				</ul>
+				To make it easier to check, please add the last 3 digits of your id paper to the registration
+				fee. Confirmation is manual, meaning you must inform and send proof of transfer at this link: CLICK
+				HERE
+			</div>
 		</div>
 	</div>
-	<div class="bg-gray-100 w-1/2 h-96 rounded-xl">
+</div>
+
+<Title title="Submissions" />
+
+<div class="px-5 xl:px-0 mt-5 xl:mt-12 xl:w-3/5 mx-auto">
+	<div class="text-lg xl:text-2xl text-gradient-meta font-medium mb-2 xl:mb-3">
+		Paper Submission
+	</div>
+	<div>
+		<ul class="list-disc px-6 my-3">
+			<li>
+				Please submit your paper through the EDAS conference management system through the following
+				link: https://edas.info/N31869.
+			</li>
+			<li>Papers should follow the two-column IEEE conference style, between 4 to 6 pages.</li>
+			<li>
+				Please consult the following link for manuscript templates:
+				https://www.ieee.org/conferences/publishing/templates.html
+			</li>
+			<li><strong>Final manuscript should be in paper size of A4 (A4 template)</strong></li>
+		</ul>
+	</div>
+
+	<div class="text-lg xl:text-2xl text-gradient-meta font-medium mb-2 xl:mt-5">
+		Final Manuscript Preparation
+	</div>
+	<div>
+		<ul class="list-decimal px-6 my-3">
+			<li>
+				You must revise your manuscript according to the comments and suggestions given by the
+				reviewers.
+			</li>
+			<li>Ensure that you have added all the author names, both in your manuscript and in EDAS.</li>
+			<li>
+				You are required to ensure that the similarity rating of your manuscript is less than 30%.
+			</li>
+			<li>
+				Submissions with a similarity rating of 30% or above will be dropped and no longer
+				considered for ISITIA 2024.
+			</li>
+			<li>
+				Please ensure that your manuscript has been checked for grammatical and typographical
+				errors, and that your manuscript is IEEE PDF eXpress compliant.
+				<ul class="list-disc px-6">
+					<li>
+						A formatting checklist is given here to help you prepare your manuscript before
+						uploading it to IEEE PDF eXpress.
+					</li>
+					<li>
+						You should also upload the confirmed checklist during the registration process. The
+						details on how to use IEEE pdf eXpress to generate your PDF file can be found here.
+					</li>
+				</ul>
+			</li>
+			<li>
+				You are required to transfer the copyright of the manuscript to IEEE if you wish your
+				manuscript to be published.
+			</li>
+			<li>This can be done electronically through EDAS.</li>
+			<li>
+				IEEE reserves the right to exclude a paper from distribution after the conference (e.g.,
+				removal from IEEE Xplore) if the paper is not presented at the conference.
+			</li>
+		</ul>
+	</div>
+
+	<div class="text-lg xl:text-2xl text-gradient-meta font-medium mb-2 xl:mt-5">
+		IEEE PDF eXpress Guidelines
+	</div>
+	<div>
+		<ul class="list-disc px-6 my-3">
+			<li>IEEE’s PDF eXpress for ISITIA 2024 will open at Site Open Date: Conference ID: (TBA)</li>
+			<li>Make sure your manuscript has been revised.</li>
+			<li>Visit the website of IEEE PDF eXpress at https://ieee-pdf-express.org/</li>
+			<li>
+				First time users should do the following:
+				<ul class="list-decimal px-6 my-3">
+					<li>Select the New Users – Click here link.</li>
+					<li>
+						Enter the following:
+						<ul class="list-disc px-6 my-3">
+							<li>(Conference ID will be announced later)</li>
+							<li>Your email address</li>
+							<li>A password</li>
+						</ul>
+					</li>
+					<li>
+						Continue to enter information as prompted. Verify that your contact information is
+						valid.
+					</li>
+				</ul>
+			</li>
+			<li>
+				Previous users of PDF eXpress need to follow the same steps above, but should enter the same
+				password that was used for the previous conferences.
+			</li>
+			<li>
+				For each paper ID that is created,IEEE PDF eXpress is able to convert up to 20 source files
+				and perform checking of 10 PDF files.
+			</li>
+			<li>For more details, visit https://ieee-pdf-express.org/External/UsingIEEEPDFeXpress</li>
+		</ul>
 	</div>
 </div>
 
+<Title title="Venue" />
+
+<div class="container mt-8 xl:mt-12 mx-auto px-5 xl:px-0 xl:w-4/5 xl:space-x-8 xl:flex">
+	<div class="bg-gray-100 w-full xl:w-2/5 h-40 xl:h-96 rounded-xl"></div>
+	<div class="xl:w-3/5 mt-5 xl:mt-0">
+		<div class="text-xl xl:text-2xl font-medium leading-tight">JW Marriott Hotel Surabaya</div>
+		<div class="xl:text-lg mt-2 leading-tight opacity-75">
+			Jl. Embong Malang No.85-89, Kedungdoro, Kec. Tegalsari, Surabaya, Jawa Timur 60261
+		</div>
+	</div>
+</div>
+
+<Title title="Organizing Committee" />
+
+<Title title="Contact" />
+
+<div
+	class="container mt-8 mb-12 xl:mt-12 xl:mb-32 mx-auto px-5 xl:px-0 xl:w-4/5 xl:space-x-8 xl:flex"
+>
+	<div class="xl:w-3/5 flex flex-col justify-between">
+		<div class="space-y-3">
+			<div class="text-xl xl:text-2xl font-medium leading-tight">
+				Institut Teknologi Sepuluh Nopember Surabaya, East Java, Indonesia
+			</div>
+			<div class="xl:text-lg leading-tight opacity-75">
+				Jl. Raya ITS Sukolilo<br />
+				Gedung Fakultas Kedokteran dan Kesehatan Lantai 2,<br />
+				Keputih, Sukolilo, Surabaya, East Java 60111
+			</div>
+			<div class="space-y-1 mt-3">
+				<a
+					href="mailto:meta@its.ac.id"
+					class="rounded-full px-3 py-1 xl:px-5 xl:py-2 border border-black inline-block xl:text-lg"
+					>Email: <span class="font-medium underline">meta@.ac.id</span></a
+				>
+				<a
+					href="https://wa.me/628112811240"
+					class="rounded-full px-3 py-1 xl:px-5 xl:py-2 border border-black inline-block xl:text-lg"
+					>WhatsApp: <span class="font-medium underline">62 8112-8112-40</span> (Mr. Fahmi Mubarok)</a
+				>
+			</div>
+		</div>
+	</div>
+</div>
