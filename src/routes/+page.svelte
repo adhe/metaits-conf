@@ -11,7 +11,7 @@
     class="z-10 flex-1 bg-gradient-to-b from-[#009EA8]/80 to-[#003844] to-80% xl:bg-gradient-to-tr xl:from-[#003844] xl:to-[#009EA8] text-white px-5 xl:pl-24 xl:pr-12 py-3 flex flex-col items-center xl:items-start xl:justify-between xl:w-3/5"
   >
     <div class="py-6 flex-1 xl:flex-none">
-      <img src="metaits-logo-white.svg" class="h-8 xl:h-12" alt="" />
+      <img src="meta2-white.svg" class="h-16 xl:h-24" alt="" />
     </div>
     <div class="flex flex-col">
       <div class="flex m-auto xl:m-0">
@@ -120,41 +120,44 @@
     that author and/or additional paper registrations are non-refundable.
   </div>
 
-  <div
-    class="mt-5 xl:mt-12 flex text-white rounded-t-lg xl:rounded-t-xl bg-gradient-meta text-sm xl:text-base font-medium tracking-wide"
-  >
-    <div class="p-3 flex-1">Category</div>
-    <div class="p-3 w-[123px] text-center border-x border-white/20">International</div>
-    <div class="p-3 w-32 xl:w-40 text-center">Domestik</div>
-  </div>
-  {#each Pricing as price}
-    <div
-      class="flex border border-t-0 last:rounded-b-lg last:xl:rounded-b-xl text-sm xl:text-base hover:bg-gray-100"
-    >
-      <div class="flex-1 px-2 py-1 xl:p-3 font-medium">{price.category}</div>
-      <div class="flex items-center justify-end px-2 py-1 xl:p-3 w-[123px] border-x">
-        {price.international}
-      </div>
-      <div class="flex items-center justify-end px-2 py-1 xl:p-3 w-32 xl:w-40 text-right">
-        {price.domestic}
-      </div>
+  <div class="mt-5 xl:mt-12 rounded-lg ring-1 ring-gray-200 overflow-hidden">
+    <div class=" flex text-white bg-gradient-meta text-sm xl:text-base font-medium tracking-wide">
+      <div class="p-3 flex-1">Category</div>
+      <div class="p-3 w-[123px] text-center border-x border-white/20">International</div>
+      <div class="p-3 w-32 xl:w-40 text-center">Domestik</div>
     </div>
-  {/each}
+    <div class="divide-y">
+      {#each Pricing as price}
+        <div class="flex text-sm xl:text-base hover:bg-gray-100">
+          <div class="flex-1 px-2 py-1 xl:p-3 font-medium">{price.category}</div>
+          <div class="flex items-center justify-end px-2 py-1 xl:p-3 w-[123px] border-x">
+            {price.international}
+          </div>
+          <div class="flex items-center justify-end px-2 py-1 xl:p-3 w-32 xl:w-40 text-right">
+            {price.domestic}
+          </div>
+        </div>
+      {/each}
+    </div>
+  </div>
 
-  <div class="xl:grid xl:grid-cols-2 xl:gap-10 mt-5 xl:mt-8">
-    <div class="">
+  <div class="xl:grid xl:grid-cols-2 divide-y xl:divide-y-0 xl:divide-x mt-5 xl:mt-8">
+    <div class="xl:pr-6 mb-5">
       <div class="text-lg xl:text-2xl mb-3 font-medium text-gradient-meta">
         International Participants
       </div>
       <div>
         Registration payments for international participants are made via EDAS using a credit card
         at an exchange rate of US dollars. Confirmation is automatic because it uses the EDAS
-        system. If your payment is successful, the status will change to PAID. Please <a
-          href="https://edas.info/r31248">CLICK HERE</a
-        >
+        system. If your payment is successful, the status will change to PAID.
       </div>
+      <a
+        href="https://edas.info/r31248"
+        class="rounded-full px-3 py-1 mt-2 ring-1 hover:ring-2 ring-black inline-block text-sm xl:text-base font-medium transform duration-150"
+        >Click here</a
+      >
     </div>
-    <div>
+    <div class="xl:pl-8 pt-5 xl:pt-0">
       <div class="text-lg xl:text-2xl mb-3 font-medium text-gradient-meta">
         Domestic Participants
       </div>
@@ -166,9 +169,14 @@
           <li>Account number: <strong>154 6778 607</strong></li>
         </ul>
         To make it easier to check, please add the last 3 digits of your id paper to the registration
-        fee. Confirmation is manual, meaning you must inform and send proof of transfer at this link: CLICK
-        HERE
+        fee. Confirmation is manual, meaning you must inform and send proof of transfer at this link
+        below:
       </div>
+      <a
+        href="https://edas.info/r31248"
+        class="rounded-full px-3 py-1 mt-2 ring-1 hover:ring-2 ring-black inline-block text-sm xl:text-base font-medium transform duration-150"
+        >Click here</a
+      >
     </div>
   </div>
 </div>
@@ -278,42 +286,77 @@
 
 <Title title="Venue" />
 
-<div class="container mt-8 xl:mt-12 mx-auto px-5 xl:px-0 xl:w-4/5 xl:space-x-8 xl:flex">
-  <div class="bg-gray-100 w-full xl:w-2/5 h-40 xl:h-96 rounded-xl"></div>
-  <div class="xl:w-3/5 mt-5 xl:mt-0">
+<div class="container mt-8 xl:mt-12 mx-auto px-5 xl:px-0 xl:w-3/5 xl:space-x-8 xl:flex">
+  <div class="xl:w-1/2 mt-5 xl:mt-0">
     <div class="text-xl xl:text-2xl font-medium leading-tight">JW Marriott Hotel Surabaya</div>
     <div class="xl:text-lg mt-2 leading-tight opacity-75">
       Jl. Embong Malang No.85-89, Kedungdoro, Kec. Tegalsari, Surabaya, Jawa Timur 60261
     </div>
   </div>
+  <div class="relative w-full xl:w-1/2 h-40 xl:h-80 rounded-xl overflow-hidden">
+    <iframe
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://maps.google.com/maps?q=jw+marriot+hotel+surabaya&t=&z=14&ie=UTF8&iwloc=&output=embed"
+      frameborder="0"
+      title="JW Marriot Tunjungan Surabaya"
+    ></iframe>
+  </div>
 </div>
 
 <Title title="Organizing Committee" />
+<div class="container mt-8 xl:mt-12 mx-auto px-5 xl:px-0 xl:w-4/5 xl:space-x-8 xl:flex">
+  <div class="mt-5 xl:mt-0 mx-auto space-y-1">
+    <div class="flex items-center space-x-3">
+      <div class="xl:w-52 xl:text-lg font-medium">General Chair</div>
+      <div class="xl:text-lg opacity-75">: Fahmi Mubarok, S.T., M.Sc., Ph.D. (ITS)</div>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <div class="xl:w-52 xl:text-lg font-medium">Technical Program Chair</div>
+      <div class="xl:text-lg opacity-75">: Dr. Shoffi Izza Sabilla, S.Kom. (ITS)</div>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <div class="xl:w-52 xl:text-lg font-medium">Publication Chair</div>
+      <div class="xl:text-lg opacity-75">: Dr. Dhany Arifianto, S.T., M.Eng., Ph.D. (ITS)</div>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <div class="xl:w-52 xl:text-lg font-medium">Secretary</div>
+      <div class="xl:text-lg opacity-75">: dr. Putri Alief Siswanto, M.T. (ITS)</div>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <div class="xl:w-52 xl:text-lg font-medium">Treasurer</div>
+      <div class="xl:text-lg opacity-75">: Achmad Syaifuddin, S.T., M..Eng., Ph..D. (ITS)</div>
+    </div>
+  </div>
+</div>
 
 <Title title="Contact" />
 
 <div
   class="container mt-8 mb-12 xl:mt-12 xl:mb-32 mx-auto px-5 xl:px-0 xl:w-4/5 xl:space-x-8 xl:flex"
 >
-  <div class="xl:w-3/5 flex flex-col justify-between">
+  <div class="xl:w-3/5 flex flex-col items-center text-center mx-auto justify-between">
     <div class="space-y-3">
       <div class="text-xl xl:text-2xl font-medium leading-tight">
-        Institut Teknologi Sepuluh Nopember Surabaya, East Java, Indonesia
+        Institut Teknologi Sepuluh Nopember Surabaya<br />East Java, Indonesia
       </div>
       <div class="xl:text-lg leading-tight opacity-75">
         Jl. Raya ITS Sukolilo<br />
         Gedung Fakultas Kedokteran dan Kesehatan Lantai 2,<br />
         Keputih, Sukolilo, Surabaya, East Java 60111
       </div>
-      <div class="space-y-1 mt-3">
+      <div class="space-y-2 xl:space-x-1 mt-3">
         <a
           href="mailto:meta@its.ac.id"
-          class="rounded-full px-3 py-1 xl:px-5 xl:py-2 border border-black inline-block xl:text-lg"
+          class="rounded-full px-3 py-1 xl:px-5 xl:py-2 ring-1 hover:ring-2 ring-black inline-block xl:text-lg transform duration-150"
           >Email: <span class="font-medium underline">meta@.ac.id</span></a
         >
         <a
           href="https://wa.me/628112811240"
-          class="rounded-full px-3 py-1 xl:px-5 xl:py-2 border border-black inline-block xl:text-lg"
+          class="rounded-full px-3 py-1 xl:px-5 xl:py-2 ring-1 hover:ring-2 ring-black inline-block xl:text-lg transform duration-150"
           >WhatsApp: <span class="font-medium underline">62 8112-8112-40</span> (Mr. Fahmi Mubarok)</a
         >
       </div>

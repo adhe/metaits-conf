@@ -22,7 +22,7 @@
   class={`${isNavAppear ? 'ease-out' : '-translate-y-full ease-in-out'} fixed top-0 inset-x-0 drop-shadow-md  backdrop-blur-xl bg-white/85 transition duration-300 z-20`}
 >
   <div class="container w-4/5 flex items-center justify-between py-3 mx-auto">
-    <img src="metaits-logo-black.svg" class="h-8 xl:h-10" alt="" />
+    <img src="meta2-black.svg" class="h-12 xl:h-16" alt="" />
     <div class="flex">
       <Link href={url + '#'}>Home</Link>
       <Link href={url + '/#topic'}>Topics</Link>
