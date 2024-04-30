@@ -3,7 +3,9 @@
   import TopicItem from '$lib/components/TopicItem.svelte';
   import Speaker from '$lib/components/Speaker.svelte';
   import Title from '$lib/components/Title.svelte';
+  import TimelineItem from '$lib/components/TimelineItem.svelte'; 
   import ArrowDown from '$lib/assets/ArrowDown.svelte';
+  import Layout from './+layout.svelte';
 </script>
 
 <div class="relative min-h-screen font-medium w-full flex flex-col xl:flex-row">
@@ -66,31 +68,30 @@
     “Recent Breakthroughs in Medical Technology and Healthcare System”
   </div>
   <div class="max-w-4xl text-center mt-8 xl:mt-12 xl:text-lg text-gray-600">
-    ISITIA 2024 is the annual international conference held by the Department of Electrical
+    META 2024 is the annual international conference held by the Department of Electrical
     Engineering of the Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia. It was
     previously known as SITIA and has been held annually by the department since 1999. This year,
-    ISITIA will be held in hybrid.
+    META will be held in hybrid.
   </div>
   <div class="max-w-4xl text-center mt-3 xl:mt-5 xl:text-lg text-gray-600">
-    Papers that are accepted and presented at ISITIA 2024 will be submitted for possible inclusion
+    Papers that are accepted and presented at META 2024 will be submitted for possible inclusion
     in IEEE Xplore, subject to meeting IEEE Xplore’s scope and quality requirements. If an author
     fails to register for the conference or does not present their paper, the paper will be flagged
     as a ‘no show’ and removed from the conference proceedings.
   </div>
 
   <Title title="Important Dates" />
-
-  <div id="topic" class="w-full flex items-center space-x-6 pt-16 xl:pt-32">
-    <div class="grow border-t-2 xl:w-20" />
-    <div class="relative text-3xl xl:text-4xl font-medium text-gradient-meta">
-      Topics of interest
-      <div class="absolute text-base opacity-50 bottom-0 translate-y-full inset-x-0 text-center">
-        include, but are not limited to
-      </div>
-    </div>
-    <div class="grow border-t-2 xl:w-20" />
+  <div class="px-5 xl:px-0 mt-5 xl:mt-12 mx-auto xl:w-5/6 grid xl:grid-cols-6">
+    <TimelineItem id="1" date="1 May 2024" description="Paper Submission Page Open" />
+    <TimelineItem id="2" date="29 June 2024" description="Paper Submission Due" />
+    <TimelineItem id="3" date="1 July 2024" description="Acceptance Notification" />
+    <TimelineItem id="4" date="16 August 2024" description="Final Manuscript Submission" />
+    <TimelineItem id="5" date="16 September 2024" description="Regsitration Due" />
+    <TimelineItem id="6" date="10 October 2024" description="Video Presentation Due" />
   </div>
-  <div class="mt-12 grid xl:grid-cols-3 gap-2 xl:gap-3">
+
+  <Title title="Topics of Interests" />
+  <div class="xl:w-4/5 mt-12 grid xl:grid-cols-3 gap-2 xl:gap-3">
     {#each Topics as topic}
       <TopicItem data={topic} />
     {/each}
@@ -153,7 +154,7 @@
       </div>
       <a
         href="https://edas.info/r31248"
-        class="rounded-full px-3 py-1 mt-2 ring-1 hover:ring-2 ring-black inline-block text-sm xl:text-base font-medium transform duration-150"
+        class="rounded-full px-6 py-1 mt-6 ring-1 hover:ring-2 ring-[#009EA8] inline-block text-gradient-meta text-sm xl:text-base font-medium transform duration-150"
         >Click here</a
       >
     </div>
@@ -165,8 +166,8 @@
         Registration Payment for Domestic Participants can be made by local bank transfer, to:
         <ul class="list-disc px-6 my-3">
           <li>Name of Bank: <strong>Bank BNI</strong></li>
-          <li>Beneficiary Name: <strong>Anita Sari Wardani</strong></li>
-          <li>Account number: <strong>154 6778 607</strong></li>
+          <li>Beneficiary Name: <strong>Teknologi Kedokteran</strong></li>
+          <li>Virtual Account number: <strong>988 111 335 921 0000</strong></li>
         </ul>
         To make it easier to check, please add the last 3 digits of your id paper to the registration
         fee. Confirmation is manual, meaning you must inform and send proof of transfer at this link
@@ -174,7 +175,7 @@
       </div>
       <a
         href="https://edas.info/r31248"
-        class="rounded-full px-3 py-1 mt-2 ring-1 hover:ring-2 ring-black inline-block text-sm xl:text-base font-medium transform duration-150"
+        class="rounded-full px-6 py-1 mt-6 ring-1 hover:ring-2 ring-[#009EA8] inline-block text-gradient-meta text-sm xl:text-base font-medium transform duration-150"
         >Click here</a
       >
     </div>
@@ -217,7 +218,7 @@
       </li>
       <li>
         Submissions with a similarity rating of 30% or above will be dropped and no longer
-        considered for ISITIA 2024.
+        considered for META 2024.
       </li>
       <li>
         Please ensure that your manuscript has been checked for grammatical and typographical
@@ -250,7 +251,7 @@
   </div>
   <div>
     <ul class="list-disc px-6 my-3">
-      <li>IEEE’s PDF eXpress for ISITIA 2024 will open at Site Open Date: Conference ID: (TBA)</li>
+      <li>IEEE’s PDF eXpress for META 2024 will open at Site Open Date: Conference ID: (TBA)</li>
       <li>Make sure your manuscript has been revised.</li>
       <li>Visit the website of IEEE PDF eXpress at https://ieee-pdf-express.org/</li>
       <li>
