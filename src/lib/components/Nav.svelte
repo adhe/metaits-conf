@@ -27,8 +27,8 @@
       <Link href={url + '#'}>Home</Link>
       <Link href={url + '/#topic'}>Topics</Link>
       <Link href={url + '/#keynote-speaker'}>Keynote Speaker</Link>
-      <Link href={url + '/#Submissions'}>Submissions</Link>
       <Link href={url + '/#Registration'}>Registration</Link>
+      <Link href={url + '/#Submissions'}>Submissions</Link>
       <Link href={url + '/#Contact'}>Contact</Link>
     </div>
   </div>

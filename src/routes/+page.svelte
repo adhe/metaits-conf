@@ -353,7 +353,7 @@
         <a
           href="mailto:meta@its.ac.id"
           class="rounded-full px-3 py-1 xl:px-5 xl:py-2 ring-1 hover:ring-2 ring-black inline-block xl:text-lg transform duration-150"
-          >Email: <span class="font-medium underline">meta@.ac.id</span></a
+          >Email: <span class="font-medium underline">meta@its.ac.id</span></a
         >
         <a
           href="https://wa.me/628112811240"
